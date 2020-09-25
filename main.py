@@ -8,7 +8,7 @@ topic = "cayley"
 
 if __name__ == "__main__":
   if topic == "cayley":
-    table = cayley_tabler(Group([1, 2], xor), True, False)
+    table = cayley_tabler(Group([1, 2], xor), True, True)
     for row in table:
       print(row)
   elif topic == "perms":

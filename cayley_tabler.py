@@ -21,12 +21,10 @@ def cayley_tabler(group, simplify=False, trim=False):
     for element in group.set:
       row.append(element)
     rows.append(row)
-  else:
-    row = []
-
+  
   for another in group.set:
     if trim == False:
-      row == [another]
+      row = [another]
     else:
       row = []
     for yetAnother in group.set:
